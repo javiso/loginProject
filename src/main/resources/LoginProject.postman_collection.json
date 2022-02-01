@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "cca148fb-3c06-4b7e-a2c1-798d1a106dd8",
+		"name": "LoginProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"mufasa\",\n    \"password\": \"reyleon\",\n    \"email\": \"mufasa@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/project/v1/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"project",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LogIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "mufasa",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "reyleon",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9000/project/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"project",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LogUrl - findAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/project/v1/logUrl?page=0&size=3",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"project",
+						"v1",
+						"logUrl"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sum",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/project/v1/user/sum?value1=2&value2=5",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"project",
+						"v1",
+						"user",
+						"sum"
+					],
+					"query": [
+						{
+							"key": "value1",
+							"value": "2"
+						},
+						{
+							"key": "value2",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:9000/project/api/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"project",
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
