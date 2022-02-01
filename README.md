@@ -26,12 +26,14 @@ The first thing you will have to do is to create an user. To do so, use the foll
 - Body:
 
 {
-
+    
     "username": "mufasa",
-    "password": "reyleon",
-    "email": "mufasa@gmail.com"
 
+    "password": "reyleon",
+    
+    "email": "mufasa@gmail.com"
 }
+
 - Response example:
 {
     "id": 1,
