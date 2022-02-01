@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import static com.example.project.project.security.SecurityParameter.LOGIN_URL;
 import static com.example.project.project.security.SecurityParameter.TOKEN_BEARER_PREFIX;
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 
@@ -30,7 +31,7 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        if(request.getServletPath().equals("/api/login") ) {
+        if(request.getServletPath().equals(LOGIN_URL) ) {
             filterChain.doFilter(request, response);
         } else{
             String authorizationHeader = request.getHeader(AUTHORIZATION);
