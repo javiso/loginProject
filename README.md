@@ -24,29 +24,28 @@ You need to change the ports to 8080 in case of the project is run locally.
 The first thing you will have to do is to create an user. To do so, use the following endpoint:
 - POST /project/v1/user/signup
 - Body:
-```{
+```
     "username": "mufasa",
     "password": "reyleon",
     "email": "mufasa@gmail.com"
-    }
 ```
     
 - Response example:
-{
+```
     "id": 1,
     "username": "javis",
     "password": "hola",
     "email": "xx@xx.com"
-}
+```
 
 # Log in
 Now, you should log in. Call the endpoint:
 - POST /project/api/login
 - Parameters: They must be input in: Body --> x-www-form-urlencoded. Example: username: mufasa, password: reyleon
 - Response: It returns a token example: 
-{
+```
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXZpcyIsImlzcyI6Ii9wcm9qZWN0L2FwaS9sb2dpbiIsImV4cCI6MTY0Mzc1MTE2M30.pA2YC-cGSTrdxC9dPFADbUmJnhl6zgk8Atsxqgf9T_I"
-}
+```
 Note: The token expires in 3' from the time of creation. 
 
 # Sum and logurl
@@ -58,7 +57,7 @@ Just then, you already can use the services sum and logurl. To use them, it is r
     GET /project/v1/logUrl?page=0&size=3  (Through page and size, you can configure the result. By default, size = 3). The json result was set up in order to appreciate the result better.
     Response example:
     
-    {
+    ```
     "items": [
         {
             "id": 1,
@@ -78,7 +77,7 @@ Just then, you already can use the services sum and logurl. To use them, it is r
         "size": 3,
         "total": 3
     }
-}
+
 
 - LOGOUT
 GET /project/api/logout
