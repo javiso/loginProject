@@ -49,7 +49,7 @@ Now, you should log in. Call the endpoint:
 Note: The token expires in 3' from the time of creation. 
 
 # Sum and logurl
-Just then, you already can use the services sum and logurl. To use them, it is really important that you inputs the token in the header. In postman, got to headers and, in the key column, write: Authorization. As its value, input: Bearer token. Note the speace between Bearer and the token.
+Just then, you already can use the services sum and logurl. To use them, it is really important that you inputs the token in the header. In postman, got to headers and, in the key column, write: Authorization. As its value, input: Bearer token. Note the space between Bearer and the token.
 - SUM: 
     GET /project/v1/user/sum?value1=2&value2=5.
     Response example: 7
