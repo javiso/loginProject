@@ -78,7 +78,6 @@ Just then, you already can use the services sum and logurl. To use them, it is r
         "total": 3
     }
 
-
 - LOGOUT
 GET /project/api/logout
 Result: Ok
