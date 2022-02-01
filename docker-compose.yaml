@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  app:
+    container_name: app
+    ports:
+      - 9000:8080
+    image: javiso/projectapp:v1
+    depends_on:
+      - postgres
+    links:
+      - postgres
+
+  postgres:
+    container_name: postgres_project
+    restart: always
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "project"
