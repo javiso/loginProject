@@ -24,10 +24,12 @@ You need to change the ports to 8080 in case of the project is run locally.
 The first thing you will have to do is to create an user. To do so, use the following endpoint:
 - POST /project/v1/user/signup
 - Body:
-
+```{
     "username": "mufasa",
     "password": "reyleon",
     "email": "mufasa@gmail.com"
+    }
+```
     
 - Response example:
 {
