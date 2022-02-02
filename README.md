@@ -17,7 +17,7 @@ You simply have to run docker-compose.yaml. This file is in the project. The pro
 You have to clone the project and then run only the service 'postgres' in docker-compose.yaml. This service must be run before running the project. The server listens on the port 8080
 
 You will find in the project the requests (with examples) so that they can be imported to postman (They are inside the folder 'resources'). The requests are already set in the port 9000
-You need to change the ports to 8080 in case of the project is run locally.
+You need to change the ports to 8080 in case of that the project is run locally.
 
 # USE
 # Create an user
