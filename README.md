@@ -82,3 +82,6 @@ Just then, you already can use the services sum and logurl. To use them, it is r
 GET /project/api/logout
 Result: Ok
 It's necessary to put the token in headers in order to logout. 
+
+#DATABASE
+If you wish to access the database, here's the details: host:localhost / port: 5432 / Database: postgres / username: postgres /password: project
