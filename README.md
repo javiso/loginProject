@@ -11,7 +11,7 @@ In this file, you are going to find how to run the project as well as the detail
 There are two ways of running the project: from Docker or local
 
 - Run the project by using docker
-You simply have to run the file docker-compose.yaml. This file is in the project. The project's container listens on the port 9000.  
+You simply have to run docker-compose.yaml. This file is in the project. The project's container listens on the port 9000.  
 
 - Run the project locally.
 You have to clone the project and then run only the service 'postgres' in docker-compose.yaml. This service must be run before running the project. The server listens on the port 8080
