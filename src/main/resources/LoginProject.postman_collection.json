@@ -77,7 +77,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "",
+						"value": "Bearer ",
 						"type": "default"
 					}
 				],
